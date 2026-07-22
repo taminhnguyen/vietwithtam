@@ -275,9 +275,15 @@ export default function VietWithTam() {
         <div style={{ maxWidth: 1040, margin: "0 auto" }}>
           <span className="eyebrow">Courses</span>
           <h2 className="section-heading">Find the right class for you.</h2>
-          <div style={{ background: C.lightMint, borderRadius: 10, padding: "10px 18px", marginBottom: 28, display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <span style={{ fontSize: 16 }}>👤</span>
-            <p style={{ fontSize: 14, color: C.primary, fontWeight: 500 }}>All lessons are taught 1-on-1 — fully personalised to your level and goals</p>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 40 }}>
+            <div style={{ background: C.lightMint, borderRadius: 10, padding: "10px 18px", display: "inline-flex", alignItems: "center", gap: 8 }}>
+              <span>👤</span>
+              <p style={{ fontSize: 14, fontWeight: 500, color: C.primary }}>1-on-1 private lessons — fully personalised to your level and goals</p>
+            </div>
+            <div style={{ background: "#FEF3C7", borderRadius: 10, padding: "10px 18px", display: "inline-flex", alignItems: "center", gap: 8 }}>
+              <span>👥</span>
+              <p style={{ fontSize: 14, fontWeight: 500, color: "#92400E" }}>Group classes available (4–5 students) — <strong>discounted rate</strong> for all members</p>
+            </div>
           </div>
           <div className="course-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
             {COURSES.map(c => (
