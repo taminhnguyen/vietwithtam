@@ -11,7 +11,7 @@ const COURSES = [
   { level: "0 → A2", title: "Beginner Vietnamese", desc: "Start from zero and build a solid foundation. Tones, the alphabet, greetings, and everyday phrases — structured lessons that give you real confidence fast.", icon: "🌱", tag: "Most popular" },
   { level: "B1 → B2", title: "Intermediate Vietnamese", desc: "Break through your plateau. Deepen your grammar, expand your vocabulary, and tackle the nuances that make Vietnamese rich and expressive.", icon: "🌿", tag: null },
   { level: "All levels", title: "Conversation & Fluency", desc: "Stop translating in your head and start speaking naturally. Focused on real-life situations — from casual chats to navigating Vietnam confidently.", icon: "💬", tag: null },
-  { level: "Ages 5–12", title: "Kids Vietnamese", desc: "Fun, engaging lessons designed for young learners. Games, songs, and stories make learning Vietnamese feel like play — while building real language skills.", icon: "🧒", tag: "Ages 5–12" },
+  { level: "Ages 5–12", title: "Vietnamese for Kids", desc: "Fun, engaging lessons designed for young learners. Games, songs, and stories make learning Vietnamese feel like play — while building real language skills.", icon: "🧒", tag: "Ages 5–12" },
 ];
 
 const PILLARS = [
