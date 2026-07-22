@@ -8,10 +8,10 @@ const C = {
 };
 
 const COURSES = [
-  { level: "0 → A2", title: "Beginner Vietnamese", desc: "Build a solid foundation from your very first words. Tones, the alphabet, greetings, and everyday phrases — with patience and clear structure.", icon: "🌱", tag: "Most popular" },
-  { level: "B1 → B2", title: "Intermediate Vietnamese", desc: "Deepen your grammar, expand your vocabulary, and tackle the nuances that make Vietnamese rich, expressive, and sometimes delightfully tricky.", icon: "🌿", tag: null },
-  { level: "All levels", title: "Conversation & Fluency", desc: "Practice real-life conversations in a relaxed setting. Build confidence, reduce hesitation, and start sounding natural.", icon: "💬", tag: null },
-  { level: "Flexible", title: "1-on-1 Private Tutoring", desc: "Fully tailored sessions around your goals, schedule, and learning style. The most direct path to the progress you actually want.", icon: "🎯", tag: "Most flexible" },
+  { level: "0 → A2", title: "Beginner Vietnamese", desc: "Start from zero and build a solid foundation. Tones, the alphabet, greetings, and everyday phrases — structured lessons that give you real confidence fast.", icon: "🌱", tag: "Most popular" },
+  { level: "B1 → B2", title: "Intermediate Vietnamese", desc: "Break through your plateau. Deepen your grammar, expand your vocabulary, and tackle the nuances that make Vietnamese rich and expressive.", icon: "🌿", tag: null },
+  { level: "All levels", title: "Conversation & Fluency", desc: "Stop translating in your head and start speaking naturally. Focused on real-life situations — from casual chats to navigating Vietnam confidently.", icon: "💬", tag: null },
+  { level: "Ages 5–12", title: "Kids Vietnamese", desc: "Fun, engaging lessons designed for young learners. Games, songs, and stories make learning Vietnamese feel like play — while building real language skills.", icon: "🧒", tag: "Ages 5–12" },
 ];
 
 const PILLARS = [
@@ -252,11 +252,12 @@ export default function VietWithTam() {
       <section id="about" style={{ padding: "96px 6%", background: C.white }}>
         <div className="two-col" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center", maxWidth: 1040, margin: "0 auto" }}>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <div style={{ width: 300, height: 360, borderRadius: 20, background: "linear-gradient(160deg,#D8F3DC,#B7E4C7)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", border: "1px solid #B7E4C7", position: "relative", overflow: "hidden" }}>
-              <div style={{ position: "absolute", top: -30, right: -30, width: 100, height: 100, borderRadius: "50%", background: "rgba(42,92,69,0.08)" }} />
-              <div style={{ width: 88, height: 88, borderRadius: "50%", background: C.primary, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28, fontWeight: 700, color: "#fff", fontFamily: "'Plus Jakarta Sans',sans-serif", marginBottom: 14 }}>TN</div>
-              <p style={{ fontSize: 14, color: C.accent, fontWeight: 600, fontFamily: "'Plus Jakarta Sans',sans-serif" }}>Tâm Nguyễn</p>
-              <p style={{ fontSize: 12, color: "#7BB897", marginTop: 4 }}>Photo coming soon</p>
+            <div style={{ width: 300, height: 380, borderRadius: 20, overflow: "hidden", border: "1px solid #B7E4C7", position: "relative" }}>
+              <img
+                src="/photo.jpg"
+                alt="Tâm Nguyễn — Vietnamese language tutor"
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }}
+              />
             </div>
           </div>
           <div>
@@ -274,6 +275,10 @@ export default function VietWithTam() {
         <div style={{ maxWidth: 1040, margin: "0 auto" }}>
           <span className="eyebrow">Courses</span>
           <h2 className="section-heading">Find the right class for you.</h2>
+          <div style={{ background: C.lightMint, borderRadius: 10, padding: "10px 18px", marginBottom: 28, display: "inline-flex", alignItems: "center", gap: 8 }}>
+            <span style={{ fontSize: 16 }}>👤</span>
+            <p style={{ fontSize: 14, color: C.primary, fontWeight: 500 }}>All lessons are taught 1-on-1 — fully personalised to your level and goals</p>
+          </div>
           <div className="course-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
             {COURSES.map(c => (
               <div key={c.title} className="cc">
