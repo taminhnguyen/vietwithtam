@@ -409,7 +409,7 @@ export default function VietWithTam() {
               <span style={{ fontSize: 12, color: "#9BB8A8", fontWeight: 500 }}>or</span>
               <div style={{ flex: 1, height: 1, background: "#D8F3DC" }} />
             </div>
-            <a href="mailto:tam@vietwithtam.com" style={{ display: "block", textAlign: "center", fontSize: 15, color: C.accent, fontWeight: 500, textDecoration: "none", padding: 12, border: "1.5px solid #D8F3DC", borderRadius: 8 }}>✉️ tam@vietwithtam.com</a>
+            <a href="mailto:vietwithtam@gmail.com" style={{ display: "block", textAlign: "center", fontSize: 15, color: C.accent, fontWeight: 500, textDecoration: "none", padding: 12, border: "1.5px solid #D8F3DC", borderRadius: 8 }}>✉️ vietwithtam@gmail.com</a>
           </div>
           <p style={{ fontSize: 13, color: "#9BB8A8", marginTop: 24, lineHeight: 1.6 }}>I typically reply within 24 hours. Lessons run online via Zoom or Google Meet.</p>
         </div>
